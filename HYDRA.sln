@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYDRA.BLL", "HYDRA.BLL\HYDRA.BLL.csproj", "{29D641F1-DEB4-4A40-A998-6F0000008E68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYDRA.DAL", "HYDRA.DAL\HYDRA.DAL.csproj", "{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYDRA.GUI", "HYDRA.GUI\HYDRA.GUI.csproj", "{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29D641F1-DEB4-4A40-A998-6F0000008E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D641F1-DEB4-4A40-A998-6F0000008E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D641F1-DEB4-4A40-A998-6F0000008E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D641F1-DEB4-4A40-A998-6F0000008E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96F98354-C03E-46FB-BF64-4560040224B6}
+	EndGlobalSection
+EndGlobal

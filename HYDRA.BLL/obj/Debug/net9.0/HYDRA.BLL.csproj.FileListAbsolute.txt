@@ -1,0 +1,15 @@
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\bin\Debug\net9.0\HYDRA.BLL.deps.json
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\bin\Debug\net9.0\HYDRA.BLL.dll
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\bin\Debug\net9.0\HYDRA.BLL.pdb
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\bin\Debug\net9.0\HYDRA.DAL.dll
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\bin\Debug\net9.0\HYDRA.DAL.pdb
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.csproj.AssemblyReference.cache
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.AssemblyInfoInputs.cache
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.AssemblyInfo.cs
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.csproj.CoreCompileInputs.cache
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.csproj.Up2Date
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.dll
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\refint\HYDRA.BLL.dll
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\HYDRA.BLL.pdb
+C:\Users\LG\source\repos\HYDRA\HYDRA.BLL\obj\Debug\net9.0\ref\HYDRA.BLL.dll
