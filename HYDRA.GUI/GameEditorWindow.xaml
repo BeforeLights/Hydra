@@ -1,0 +1,44 @@
+﻿<Window x:Class="HYDRA.GUI.GameEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HYDRA.GUI"
+        mc:Ignorable="d"
+        Title="GameEditorWindow" Height="450" Width="800">
+    <Grid Background="#2D2D30" Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Game Editor" FontSize="24" FontWeight="Bold" Foreground="White" Margin="0,0,0,20"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Title" Foreground="White" Margin="0,0,0,5"/>
+                <TextBox x:Name="TitleTextBox" Padding="5" Margin="0,0,0,15"/>
+
+                <TextBlock Text="Description" Foreground="White" Margin="0,0,0,5"/>
+                <TextBox x:Name="DescriptionTextBox" Padding="5" Margin="0,0,0,15" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
+
+                <TextBlock Text="Price" Foreground="White" Margin="0,0,0,5"/>
+                <TextBox x:Name="PriceTextBox" Padding="5" Margin="0,0,0,15"/>
+
+                <TextBlock Text="Release Date" Foreground="White" Margin="0,0,0,5"/>
+                <DatePicker x:Name="ReleaseDatePicker" Padding="5" Margin="0,0,0,15"/>
+
+                <TextBlock Text="Cover Art Path" Foreground="White" Margin="0,0,0,5"/>
+                <TextBox x:Name="CoverArtPathTextBox" Padding="5" Margin="0,0,0,15"/>
+
+                <CheckBox x:Name="IsForSaleCheckBox" Content="Is For Sale" Foreground="White" IsChecked="True" Margin="0,0,0,15"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button x:Name="SaveButton" Content="Save" Width="100" Padding="8" Margin="0,0,10,0" Background="#007ACC" Foreground="White" Click="SaveButton_Click"/>
+            <Button x:Name="CancelButton" Content="Cancel" Width="100" Padding="8" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,7 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace HYDRA.DAL.Models;
 
@@ -42,24 +41,10 @@ public partial class HydraContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-    //        => optionsBuilder.UseSqlServer("Server=(local);Database=HYDRA;uid=sa;pwd=1234567890;TrustServerCertificate=True;");
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            // Build a config object, using our appsettings.json
-            IConfigurationRoot configuration = new ConfigurationBuilder()
-               .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-               .AddJsonFile("appsettings.json")
-               .Build();
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=(local);Database=HYDRA;uid=sa;pwd=1234567890;TrustServerCertificate=True;");
 
-            // Use the connection string from the config file
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("HYDRA_DB"));
-        }
-    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<CartItem>(entity =>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\App.xaml
-11407045341
+111435607265
 
-6-151074936
-237-485611318
-MainWindow.xaml;
+16201758333
+238-1190937360
+CustomerStoreView.xaml;GameDetailView.xaml;GameEditorWindow.xaml;GameManagementView.xaml;LoginWindow.xaml;MainWindow.xaml;MyLibraryView.xaml;MyOrdersView.xaml;RegistrationWindow.xaml;ShoppingCartView.xaml;UserManagementView.xaml;
 
-False
+True
 

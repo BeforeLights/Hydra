@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using HYDRA.BLL.Services;
+using System;
+using HYDRA.DAL.Models; // Add this
+using System;
+using System.Linq;
+
+namespace HYDRA.GUI
+{
+    public partial class GameDetailView : UserControl
+    {
+        private readonly GameService _gameService;
+        private readonly CartService _cartService;
+        private readonly LibraryService _libraryService; // Add this
+        private readonly User _currentUser;
+        private readonly Game _currentGame;
+
+        public GameDetailView(int gameId, User currentUser)
+        {
+            InitializeComponent();
+            _gameService = new GameService();
+            _cartService = new CartService();
+            _libraryService = new LibraryService(); // Initialize the new service
+            _currentUser = currentUser;
+
+            _currentGame = _gameService.GetGameById(gameId);
+            LoadGameDetails();
+        }
+
+        private void LoadGameDetails()
+        {
+            if (_currentGame == null) return;
+
+            // --- This code is all the same ---
+            TitleTextBlock.Text = _currentGame.Title;
+            DescriptionTextBlock.Text = _currentGame.Description;
+            PriceTextBlock.Text = _currentGame.Price.ToString("C");
+            ReleaseDateTextBlock.Text = _currentGame.ReleaseDate.HasValue ? _currentGame.ReleaseDate.Value.ToShortDateString() : "N/A";
+            PublisherTextBlock.Text = _currentGame.Publisher?.Name ?? "N/A";
+            if (!string.IsNullOrEmpty(_currentGame.CoverArtPath))
+            {
+                CoverArtImage.Source = new BitmapImage(new Uri(_currentGame.CoverArtPath, UriKind.Absolute));
+            }
+            // ScreenshotsItemsControl.ItemsSource = _currentGame.GameImages; // This line might be here from a previous step
+
+            // --- NEW: Check if the game is in the user's library ---
+            bool userOwnsGame = _libraryService.IsGameInLibrary(_currentUser.UserId, _currentGame.GameId);
+
+            if (userOwnsGame)
+            {
+                // If the user owns the game, disable the button and change its text.
+                AddToCartButton.Content = "In Library";
+                AddToCartButton.IsEnabled = false;
+            }
+            else
+            {
+                // Otherwise, ensure the button is enabled and has the correct text.
+                AddToCartButton.Content = "Add to Cart";
+                AddToCartButton.IsEnabled = true;
+            }
+        }
+
+        private void AddToCartButton_Click(object sender, RoutedEventArgs e)
+        {
+            _cartService.AddGameToCart(_currentUser.UserId, _currentGame.GameId);
+            MessageBox.Show($"{_currentGame.Title} has been added to your cart!", "Success");
+        }
+
+        // We don't need the Wishlist button logic for this step
+        // private void AddToWishlistButton_Click(object sender, RoutedEventArgs e) { ... }
+    }
+}

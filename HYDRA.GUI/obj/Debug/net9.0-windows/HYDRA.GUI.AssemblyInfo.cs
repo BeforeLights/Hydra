@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HYDRA.GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+438c7045d24fb1f78a22b87aa91008452b78374c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c8a129499f911c6dcff6968aabfff5707c249a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HYDRA.GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HYDRA.GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
