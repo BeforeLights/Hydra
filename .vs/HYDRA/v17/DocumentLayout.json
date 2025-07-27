@@ -1,7 +1,164 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.bll\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\registrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\registrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gameeditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gameeditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.bll\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\shoppingcartview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\shoppingcartview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.bll\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\myordersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\myordersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\usermanagementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\usermanagementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\hydracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\hydracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\libraryentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\libraryentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\gamemanagementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamemanagementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\mylibraryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mylibraryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|d:\\.workingplace_uni\\fpt\\github\\hydra\\hydra.gui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +177,484 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameDetailView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameDetailView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameDetailView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameDetailView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\GameDetailView.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwEMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T10:14:09.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameDetailView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameDetailView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameDetailView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameDetailView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\GameDetailView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T10:13:46.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIAywFIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:03:12.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MainWindow.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MainWindow.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T06:48:35.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistrationWindow.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\RegistrationWindow.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\RegistrationWindow.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:36:06.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameEditorWindow.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameEditorWindow.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\GameEditorWindow.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:20:18.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibraryService.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\LibraryService.cs",
+              "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\LibraryService.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\LibraryService.cs",
+              "RelativeToolTip": "HYDRA.BLL\\Services\\LibraryService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:10:03.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerStoreView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\CustomerStoreView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\CustomerStoreView.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAASwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:36:25.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\GameService.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\GameService.cs",
+              "RelativeToolTip": "HYDRA.BLL\\Services\\GameService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswGsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:08:32.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerStoreView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\CustomerStoreView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\CustomerStoreView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T07:35:47.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShoppingCartView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\ShoppingCartView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\ShoppingCartView.xaml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T12:45:43.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShoppingCartView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\ShoppingCartView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\ShoppingCartView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T10:53:42.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\CartService.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\CartService.cs",
+              "RelativeToolTip": "HYDRA.BLL\\Services\\CartService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAYwGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T10:31:39.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameManagementView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameManagementView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameManagementView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameManagementView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\GameManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T07:15:03.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\LoginWindow.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\LoginWindow.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T06:50:16.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserManagementView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\UserManagementView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\UserManagementView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\UserManagementView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\UserManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T13:24:02.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GameEditorWindow.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameEditorWindow.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\GameEditorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T07:19:48.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyOrdersView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MyOrdersView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\MyOrdersView.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T13:17:49.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MyOrdersView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MyOrdersView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\MyOrdersView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T13:17:39.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\OrderService.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\OrderService.cs",
+              "RelativeToolTip": "HYDRA.BLL\\Services\\OrderService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T12:54:57.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\UserService.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.BLL\\Services\\UserService.cs",
+              "RelativeToolTip": "HYDRA.BLL\\Services\\UserService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAgwKcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:21:24.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\UserManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\UserManagementView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\UserManagementView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\UserManagementView.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:24:39.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegistrationWindow.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\RegistrationWindow.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\RegistrationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T13:35:51.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Company.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Company.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:13:34.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HydraContext.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\HydraContext.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\HydraContext.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\HydraContext.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\HydraContext.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAYwBQBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:27:37.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Genre.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Genre.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Genre.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\Genre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:12:13.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Game.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Game.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\Game.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:28:07.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Platform.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Platform.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Platform.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Platform.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\Platform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:12:02.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GameImage.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\GameImage.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\GameImage.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\GameImage.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\GameImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:13:34.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LibraryEntry.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\LibraryEntry.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\LibraryEntry.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\LibraryEntry.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\LibraryEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:12:38.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Order.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\Order.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:10:05.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\CartItem.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\CartItem.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:56:47.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\User.cs",
+              "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\User.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.DAL\\Models\\User.cs",
+              "RelativeToolTip": "HYDRA.DAL\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:28:00.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MyLibraryView.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MyLibraryView.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\MyLibraryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T13:11:43.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\AssemblyInfo.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\AssemblyInfo.cs",
+              "RelativeToolTip": "HYDRA.GUI\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:09:09.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GameManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\GameManagementView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\GameManagementView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\GameManagementView.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:15:18.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:53:36.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MyLibraryView.xaml.cs",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml.cs",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\MyLibraryView.xaml.cs",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml.cs",
+              "RelativeToolTip": "HYDRA.GUI\\MyLibraryView.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:13:27.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\App.xaml",
+              "RelativeDocumentMoniker": "HYDRA.GUI\\App.xaml",
+              "ToolTip": "D:\\.WorkingPlace_Uni\\FPT\\Github\\Hydra\\HYDRA.GUI\\App.xaml",
+              "RelativeToolTip": "HYDRA.GUI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T06:54:03.701Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -39,11 +672,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
