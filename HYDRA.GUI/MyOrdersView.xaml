@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="HYDRA.GUI.MyOrdersView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HYDRA.GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#1E1E1E" Margin="20">
+        <StackPanel>
+            <TextBlock Text="My Order History" FontSize="28" FontWeight="Bold" Foreground="White" Margin="0,0,0,20"/>
+            <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Background="#2D2D30" Foreground="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Order ID" Binding="{Binding OrderId}" Width="100"/>
+                    <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate, StringFormat=d}" Width="150"/>
+                    <DataGridTextColumn Header="Total Amount" Binding="{Binding TotalAmount, StringFormat=C}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>
