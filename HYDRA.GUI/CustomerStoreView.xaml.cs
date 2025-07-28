@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,23 +15,22 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using HYDRA.BLL.Services;
 using HYDRA.DAL.Models;
-using System;
 
 namespace HYDRA.GUI
 {
     public partial class CustomerStoreView : UserControl
     {
         private readonly GameService _gameService;
-        private readonly MainWindow _mainWindow; // Field to hold a reference to the main window
-        private readonly User _currentUser; // Field to hold the user
+        private readonly MainWindow _mainWindow;
+        private readonly User _currentUser;
 
-        // --- MODIFIED CONSTRUCTOR ---
         public CustomerStoreView(MainWindow mainWindow, User currentUser)
         {
             InitializeComponent();
             _gameService = new GameService();
             _mainWindow = mainWindow;
             _currentUser = currentUser;
+            
             // Load all games initially
             LoadGamesForSale(null);
         }

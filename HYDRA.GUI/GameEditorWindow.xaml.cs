@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HYDRA.BLL.Services;
 using HYDRA.DAL.Models;
-using System;
 
 namespace HYDRA.GUI
 {
@@ -53,18 +52,88 @@ namespace HYDRA.GUI
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_editingGame == null) // We are in "Add" mode
+            // Validate the price first
+            if (!ValidatePrice())
             {
-                var newGame = new Game();
-                UpdateGameObject(newGame);
-                _gameService.AddGame(newGame);
+                return; // Don't save if validation fails
             }
-            else // We are in "Edit" mode
+
+            try
             {
-                UpdateGameObject(_editingGame);
-                _gameService.UpdateGame(_editingGame);
+                if (_editingGame == null) // We are in "Add" mode
+                {
+                    var newGame = new Game();
+                    UpdateGameObject(newGame);
+                    _gameService.AddGame(newGame);
+                }
+                else // We are in "Edit" mode
+                {
+                    UpdateGameObject(_editingGame);
+                    _gameService.UpdateGame(_editingGame);
+                }
+                this.DialogResult = true;
             }
-            this.DialogResult = true;
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving game: {ex.Message}", "Save Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private bool ValidatePrice()
+        {
+            string priceText = PriceTextBox.Text.Trim();
+
+            // Check if price is empty
+            if (string.IsNullOrWhiteSpace(priceText))
+            {
+                MessageBox.Show("Price cannot be empty. Please enter a valid price.", 
+                               "Invalid Price", 
+                               MessageBoxButton.OK, 
+                               MessageBoxImage.Warning);
+                PriceTextBox.Focus();
+                return false;
+            }
+
+            // Try to parse the price
+            if (!decimal.TryParse(priceText, out decimal price))
+            {
+                MessageBox.Show("Price must be a valid number. Please enter a valid price (e.g., 19.99).", 
+                               "Invalid Price", 
+                               MessageBoxButton.OK, 
+                               MessageBoxImage.Warning);
+                PriceTextBox.Focus();
+                PriceTextBox.SelectAll();
+                return false;
+            }
+
+            // Check if price is negative
+            if (price < 0)
+            {
+                MessageBox.Show("Price cannot be negative. Please enter a valid positive price.", 
+                               "Invalid Price", 
+                               MessageBoxButton.OK, 
+                               MessageBoxImage.Warning);
+                PriceTextBox.Focus();
+                PriceTextBox.SelectAll();
+                return false;
+            }
+
+            // Check if price is unreasonably high (optional validation)
+            if (price > 999.99m)
+            {
+                var result = MessageBox.Show("The price seems unusually high. Are you sure you want to set the price to " + price.ToString("C") + "?", 
+                                           "High Price Warning", 
+                                           MessageBoxButton.YesNo, 
+                                           MessageBoxImage.Question);
+                if (result == MessageBoxResult.No)
+                {
+                    PriceTextBox.Focus();
+                    PriceTextBox.SelectAll();
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         // Helper method to update a game object from the form

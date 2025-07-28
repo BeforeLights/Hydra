@@ -21,6 +21,80 @@ namespace HYDRA.BLL.Services
             // In a larger application, this would be handled by Dependency Injection,
             // but for simplicity, we'll create it directly here.
             _context = new HydraContext();
+            
+            // Ensure database exists and has basic data
+            EnsureDatabaseSetup();
+        }
+
+        /// <summary>
+        /// Ensures the database exists and has basic roles set up
+        /// </summary>
+        private void EnsureDatabaseSetup()
+        {
+            try
+            {
+                // Ensure database is created
+                _context.Database.EnsureCreated();
+
+                // Check if roles exist, if not create them
+                if (!_context.Roles.Any())
+                {
+                    var roles = new List<Role>
+                    {
+                        new Role { RoleName = "Customer" },
+                        new Role { RoleName = "Admin" },
+                        new Role { RoleName = "Manager" }
+                    };
+
+                    _context.Roles.AddRange(roles);
+                    _context.SaveChanges();
+                }
+
+                // Check if we have a default admin user, if not create one
+                if (!_context.Users.Any(u => u.Username == "admin"))
+                {
+                    var adminRole = _context.Roles.FirstOrDefault(r => r.RoleName == "Admin");
+                    if (adminRole != null)
+                    {
+                        var adminUser = new User
+                        {
+                            Username = "admin",
+                            Email = "admin@hydra.com",
+                            HashedPassword = BCrypt.Net.BCrypt.HashPassword("1", 12),
+                            RoleId = adminRole.RoleId,
+                            DateCreated = DateTime.UtcNow
+                        };
+
+                        _context.Users.Add(adminUser);
+                        _context.SaveChanges();
+                    }
+                }
+
+                // Check if we have a default customer user for testing
+                if (!_context.Users.Any(u => u.Username == "customer"))
+                {
+                    var customerRole = _context.Roles.FirstOrDefault(r => r.RoleName == "Customer");
+                    if (customerRole != null)
+                    {
+                        var customerUser = new User
+                        {
+                            Username = "customer",
+                            Email = "customer@hydra.com",
+                            HashedPassword = BCrypt.Net.BCrypt.HashPassword("1", 12),
+                            RoleId = customerRole.RoleId,
+                            DateCreated = DateTime.UtcNow
+                        };
+
+                        _context.Users.Add(customerUser);
+                        _context.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error or handle it appropriately
+                System.Diagnostics.Debug.WriteLine($"Database setup error: {ex.Message}");
+            }
         }
 
         /// <summary>

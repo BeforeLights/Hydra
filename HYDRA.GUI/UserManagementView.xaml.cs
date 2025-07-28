@@ -14,7 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using HYDRA.BLL.Services;
 using HYDRA.DAL.Models;
-using System.Linq;
 
 namespace HYDRA.GUI
 {
@@ -37,9 +36,6 @@ namespace HYDRA.GUI
 
         private void LoadRoles()
         {
-            // We need a way to get roles. Let's add it to UserService.
-            // For now, we'll assume it exists. We'll add it in the next step.
-            // This will be red for a moment.
             RoleComboBox.ItemsSource = _userService.GetAllRoles();
         }
 

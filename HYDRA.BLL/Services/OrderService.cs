@@ -91,5 +91,20 @@ namespace HYDRA.BLL.Services
                            .OrderByDescending(o => o.OrderDate) // Show newest orders first
                            .ToList();
         }
+
+        /// <summary>`
+        /// Retrieves all items (games) purchased in a specific order.
+        /// </summary>
+        /// <param name="orderId">The ID of the order to get items for.</param>
+        /// <returns>A list of OrderItem objects with Game details included.</returns>
+        public List<OrderItem> GetOrderItems(int orderId)
+        {
+            return _context.OrderItems
+                           .AsNoTracking()
+                           .Include(oi => oi.Game)
+                           .ThenInclude(g => g.Publisher)
+                           .Where(oi => oi.OrderId == orderId)
+                           .ToList();
+        }
     }
 }

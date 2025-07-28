@@ -27,11 +27,17 @@ namespace HYDRA.BLL.Services
         {
             // Access the context's Games table and convert it to a list.
             // We use .AsNoTracking() for read-only operations to improve performance.
-            return _context.Games.AsNoTracking().ToList();
+            return _context.Games
+                           .AsNoTracking()
+                           .Include(g => g.Publisher)
+                           .Include(g => g.GameImages)
+                           .Include(g => g.Genres)
+                           .Include(g => g.Platforms)
+                           .ToList();
         }
 
         /// <summary>
-        /// Adds a new game to the database.
+        /// Adds a new game to the database with duplicate title validation.
         /// </summary>
         /// <param name="game">The new game object to add.</param>
         public void AddGame(Game game)
@@ -42,16 +48,28 @@ namespace HYDRA.BLL.Services
                 throw new ArgumentNullException(nameof(game));
             }
 
+            // Check for duplicate titles
+            if (_context.Games.Any(g => g.Title.ToLower() == game.Title.ToLower()))
+            {
+                throw new InvalidOperationException($"A game with the title '{game.Title}' already exists.");
+            }
+
             _context.Games.Add(game);
             _context.SaveChanges(); // This commits the new game to the database
         }
 
         /// <summary>
-        /// Updates an existing game in the database.
+        /// Updates an existing game in the database with duplicate title validation.
         /// </summary>
         /// <param name="gameToUpdate">The game object with updated information.</param>
         public void UpdateGame(Game gameToUpdate)
         {
+            // Check for duplicate titles (excluding the current game being updated)
+            if (_context.Games.Any(g => g.GameId != gameToUpdate.GameId && g.Title.ToLower() == gameToUpdate.Title.ToLower()))
+            {
+                throw new InvalidOperationException($"A game with the title '{gameToUpdate.Title}' already exists.");
+            }
+
             _context.Games.Update(gameToUpdate);
             _context.SaveChanges();
         }
@@ -72,6 +90,23 @@ namespace HYDRA.BLL.Services
         }
 
         /// <summary>
+        /// Gets a single game by its ID, including its Publisher information and images.
+        /// </summary>
+        /// <param name="gameId">The ID of the game to retrieve.</param>
+        /// <returns>A single Game object, or null if not found.</returns>
+        public Game GetGameById(int gameId)
+        {
+            return _context.Games
+                           .AsNoTracking()
+                           .Include(g => g.Publisher) // Eagerly load the related Publisher
+                           .Include(g => g.GameImages) // Load game images/screenshots
+                           .Include(g => g.Genres) // Load genres
+                           .Include(g => g.Platforms) // Load platforms
+                           .Include(g => g.Developers) // Load developers
+                           .FirstOrDefault(g => g.GameId == gameId);
+        }
+
+        /// <summary>
         /// Retrieves a list of games for sale, optionally filtered by a search term.
         /// </summary>
         /// <param name="searchTerm">The text to search for in game titles. If null or empty, all games for sale are returned.</param>
@@ -81,6 +116,8 @@ namespace HYDRA.BLL.Services
             // Start with a query for all games for sale
             var query = _context.Games
                                 .AsNoTracking()
+                                .Include(g => g.Publisher) // Include publisher for display
+                                .Include(g => g.GameImages) // Include images
                                 .Where(g => g.IsForSale == true);
 
             // If a search term is provided, add another filter
@@ -94,19 +131,21 @@ namespace HYDRA.BLL.Services
         }
 
         /// <summary>
-        /// Gets a single game by its ID, including its Publisher information.
+        /// Finds games with duplicate titles.
         /// </summary>
-        /// <param name="gameId">The ID of the game to retrieve.</param>
-        /// <returns>A single Game object, or null if not found.</returns>
-        public Game GetGameById(int gameId)
+        /// <returns>A list of games that have duplicate titles.</returns>
+        public List<Game> GetDuplicateGames()
         {
-            return _context.Games
-                           .AsNoTracking()
-                           .Include(g => g.Publisher) // Eagerly load the related Publisher
-                           .Include(g => g.GameImages)
-                           .FirstOrDefault(g => g.GameId == gameId);
+            var duplicateGames = _context.Games
+                .AsNoTracking()
+                .GroupBy(g => g.Title.ToLower())
+                .Where(group => group.Count() > 1)
+                .SelectMany(group => group)
+                .OrderBy(g => g.Title)
+                .ThenBy(g => g.GameId)
+                .ToList();
+
+            return duplicateGames;
         }
-
-
     }
 }

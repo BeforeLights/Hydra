@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HYDRA.GUI"
         mc:Ignorable="d"
-        Title="HYDRA" Height="450" Width="800">
-    <Grid Background="#1E1E1E">
+        Title="HYDRA - Gaming Platform" 
+        Height="800" 
+        Width="1200"
+        MinHeight="600"
+        MinWidth="800"
+        WindowState="Maximized"
+        Background="{StaticResource PrimaryDark}">
+    
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <!-- For the header/nav bar -->
@@ -15,28 +22,83 @@
         </Grid.RowDefinitions>
 
         <!-- Header/Navigation Bar -->
-        <Border Grid.Row="0" Background="#2D2D30" Padding="10">
-            <DockPanel>
-                <!-- Back button will be added here from code-behind -->
-                <Button x:Name="BackButton" Content="← Back" DockPanel.Dock="Left" Visibility="Collapsed" Click="BackButton_Click"/>
+        <Border Grid.Row="0" 
+                Background="{StaticResource SecondaryDark}" 
+                Padding="20,15">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" 
+                                Direction="270" 
+                                ShadowDepth="2" 
+                                BlurRadius="8" 
+                                Opacity="0.3"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- Logo and brand -->
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- Back button -->
+                    <ColumnDefinition Width="*"/>
+                    <!-- Navigation buttons -->
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- User info and logout -->
+                </Grid.ColumnDefinitions>
 
-                <!-- NEW: Logout Button -->
-                <Button x:Name="LogoutButton" 
-            Content="Logout" 
-            DockPanel.Dock="Right" 
-            HorizontalAlignment="Right" 
-            Padding="10,5" 
-            Margin="0,0,10,0" 
-            Background="#6c757d" 
-            Foreground="White"
-            Click="LogoutButton_Click"/>
+                <!-- Logo and Brand -->
+                <StackPanel Grid.Column="0" 
+                           Orientation="Horizontal" 
+                           VerticalAlignment="Center">
+                    <!-- Hydra Logo using the actual PNG image -->
+                    <Image Width="40" Height="40" 
+                           Margin="0,0,15,0"
+                           Source="pack://application:,,,/Images/HYDRA.png"
+                           RenderOptions.BitmapScalingMode="HighQuality"/>
+                </StackPanel>
 
-                <!-- Other navigation buttons will go in this panel -->
-                <StackPanel x:Name="HeaderPanel" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0,0,0"/>
-            </DockPanel>
+                <!-- Back Button -->
+                <Button Grid.Column="1"
+                        x:Name="BackButton" 
+                        Content="← Back" 
+                        Style="{StaticResource SecondaryButton}"
+                        Visibility="Collapsed" 
+                        Margin="20,0,0,0"
+                        Click="BackButton_Click"/>
+
+                <!-- Navigation Buttons Panel -->
+                <StackPanel Grid.Column="2" 
+                           x:Name="HeaderPanel" 
+                           Orientation="Horizontal" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Margin="20,0,0,0"/>
+
+                <!-- User Info and Logout -->
+                <StackPanel Grid.Column="3" 
+                           Orientation="Horizontal" 
+                           VerticalAlignment="Center">
+                    <!-- User welcome text will be added in code-behind -->
+                    <TextBlock x:Name="WelcomeText"
+                               Foreground="{StaticResource TextSecondary}"
+                               FontSize="14"
+                               VerticalAlignment="Center"
+                               Margin="0,0,15,0"/>
+                    
+                    <!-- Logout Button -->
+                    <Button x:Name="LogoutButton" 
+                            Content="Sign Out" 
+                            Style="{StaticResource DangerButton}"
+                            Padding="15,8"
+                            Click="LogoutButton_Click"/>
+                </StackPanel>
+            </Grid>
         </Border>
 
         <!-- Main Content Area -->
-        <ContentControl Grid.Row="1" x:Name="MainContentArea"/>
+        <Border Grid.Row="1" 
+                Background="{StaticResource PrimaryDark}"
+                Padding="20">
+            <ContentControl x:Name="MainContentArea"
+                           Background="Transparent"/>
+        </Border>
     </Grid>
 </Window>

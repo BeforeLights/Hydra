@@ -5,42 +5,205 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HYDRA.GUI"
              mc:Ignorable="d" 
-d:DesignHeight="600" d:DesignWidth="800">
-    <Grid Background="#1E1E1E">
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="20">
-                <TextBlock Text="Welcome to the HYDRA Store" FontSize="28" FontWeight="Bold" Foreground="White" Margin="0,0,0,20"/>
+             d:DesignHeight="700" d:DesignWidth="1000"
+             Background="{StaticResource PrimaryDark}">
+    <UserControl.Resources>
+        <local:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
-                    <TextBox x:Name="SearchTextBox" Width="300" Padding="5" FontSize="14"/>
-                    <Button x:Name="SearchButton" Content="Search" Margin="10,0,0,0" Width="100" Padding="5" Click="SearchButton_Click"/>
-                </StackPanel>
+        <!-- Page Header -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,30">
+            <TextBlock Text="🛒 Game Store" 
+                       Style="{StaticResource TitleText}"
+                       HorizontalAlignment="Left"
+                       FontSize="32"
+                       Margin="0,0,0,10"/>
+            <TextBlock Text="Discover and purchase the latest games for your collection." 
+                       Style="{StaticResource LabelText}"
+                       Foreground="{StaticResource TextMuted}"
+                       FontSize="16"/>
+        </StackPanel>
 
-                <ListBox x:Name="GamesListBox" Background="Transparent" BorderThickness="0" SelectionChanged="GamesListBox_SelectionChanged">
-                    <!-- This tells the ListBox how to arrange its items -->
-                    <ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel/>
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>
-
-                    <!-- This is the template for EACH game in the list -->
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Border Width="200" Height="300" Margin="10" Background="#2D2D30" CornerRadius="5">
-                                <StackPanel>
-                                    <!-- Cover Art Image -->
-                                    <Image Source="{Binding CoverArtPath}" Height="200" Stretch="UniformToFill"/>
-                                    <!-- Game Title -->
-                                    <TextBlock Text="{Binding Title}" Foreground="White" FontWeight="Bold" Margin="10,5" TextTrimming="CharacterEllipsis"/>
-                                    <!-- Game Price -->
-                                    <TextBlock Text="{Binding Price, StringFormat=C}" Foreground="#00C853" Margin="10,0"/>
-                                </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+        <!-- Search Section -->
+        <Border Grid.Row="1" 
+                Style="{StaticResource Card}"
+                Margin="0,0,0,20"
+                Padding="25,20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBox x:Name="SearchTextBox" 
+                         Style="{StaticResource ModernTextBox}"
+                         Width="400" 
+                         FontSize="16"
+                         Margin="0,0,15,0"
+                         Tag="Search games..."/>
+                <Button x:Name="SearchButton" 
+                        Content="🔍 Search" 
+                        Style="{StaticResource ModernButton}"
+                        Padding="20,12"
+                        FontSize="16"
+                        Click="SearchButton_Click"/>
             </StackPanel>
-        </ScrollViewer>
+        </Border>
+
+        <!-- Games Grid -->
+        <ListBox x:Name="GamesListBox" 
+                 Grid.Row="2"
+                 Background="Transparent" 
+                 BorderThickness="0" 
+                 SelectionChanged="GamesListBox_SelectionChanged"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.CanContentScroll="False">
+            
+            <!-- Arrange items in a responsive grid -->
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" 
+                               HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <!-- Game Card Template -->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Width="280" 
+                            Height="380" 
+                            Margin="15" 
+                            Background="{StaticResource SecondaryDark}" 
+                            CornerRadius="12"
+                            Cursor="Hand"
+                            x:Name="GameCard">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" 
+                                            Direction="270" 
+                                            ShadowDepth="2" 
+                                            BlurRadius="8" 
+                                            Opacity="0.3"/>
+                        </Border.Effect>
+                        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="220"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Cover Art -->
+                            <Border Grid.Row="0" 
+                                    CornerRadius="12,12,0,0"
+                                    ClipToBounds="True">
+                                <Grid>
+                                    <Image Source="{Binding CoverArtPath}" 
+                                           Stretch="UniformToFill"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                    <!-- Fallback image if no cover art -->
+                                    <Border Background="#404040" 
+                                            Visibility="{Binding CoverArtPath, Converter={StaticResource NullToVisibilityConverter}}">
+                                        <TextBlock Text="🎮" 
+                                                   FontSize="48" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center"
+                                                   Foreground="{StaticResource TextMuted}"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+
+                            <!-- Game Info -->
+                            <StackPanel Grid.Row="1" 
+                                       Margin="20,15"
+                                       VerticalAlignment="Top">
+                                
+                                <!-- Game Title -->
+                                <TextBlock Text="{Binding Title}" 
+                                           Foreground="{StaticResource TextPrimary}" 
+                                           FontWeight="Bold" 
+                                           FontSize="18"
+                                           TextTrimming="CharacterEllipsis"
+                                           Margin="0,0,0,8"/>
+                                
+                                <!-- Game Description (first line) -->
+                                <TextBlock Text="{Binding Description}" 
+                                           Foreground="{StaticResource TextSecondary}" 
+                                           FontSize="14"
+                                           TextTrimming="CharacterEllipsis"
+                                           MaxHeight="40"
+                                           TextWrapping="Wrap"
+                                           Margin="0,0,0,12"/>
+                                
+                                <!-- Price and Publisher -->
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="{Binding Publisher.Name}" 
+                                                   Foreground="{StaticResource TextMuted}" 
+                                                   FontSize="12"
+                                                   Margin="0,0,0,4"/>
+                                    </StackPanel>
+                                    
+                                    <Border Grid.Column="1"
+                                            Background="{StaticResource SuccessGreen}"
+                                            CornerRadius="6"
+                                            Padding="12,6">
+                                        <TextBlock Text="{Binding Price, StringFormat=C}" 
+                                                   Foreground="White" 
+                                                   FontWeight="Bold"
+                                                   FontSize="16"/>
+                                    </Border>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <!-- Hover Effect Triggers -->
+                        <Border.Triggers>
+                            <EventTrigger RoutedEvent="Border.MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Effect">
+                                            <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <DropShadowEffect Color="#007ACC" 
+                                                                    Direction="270" 
+                                                                    ShadowDepth="0" 
+                                                                    BlurRadius="20" 
+                                                                    Opacity="0.6"/>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Border.MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Effect">
+                                            <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <DropShadowEffect Color="Black" 
+                                                                    Direction="270" 
+                                                                    ShadowDepth="2" 
+                                                                    BlurRadius="8" 
+                                                                    Opacity="0.3"/>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Border.Triggers>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>

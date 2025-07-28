@@ -117,7 +117,7 @@ namespace HYDRA.GUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/HYDRA.GUI;V1.0.0.0;component/gameeditorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/HYDRA.GUI;component/gameeditorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GameEditorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -32,4 +32,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="Images\HYDRA.png" />
+  </ItemGroup>
+
 </Project>

@@ -5,30 +5,184 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HYDRA.GUI"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="800">
-    <Grid Background="#1E1E1E">
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="20">
-                <TextBlock Text="My Game Library" FontSize="28" FontWeight="Bold" Foreground="White" Margin="0,0,0,20"/>
+             d:DesignHeight="700" d:DesignWidth="1000"
+             Background="{StaticResource PrimaryDark}">
+    
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-                <ListBox x:Name="GamesListBox" Background="Transparent" BorderThickness="0">
-                    <ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel/>
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Border Width="200" Height="300" Margin="10" Background="#2D2D30" CornerRadius="5">
-                                <StackPanel>
-                                    <Image Source="{Binding CoverArtPath}" Height="200" Stretch="UniformToFill"/>
-                                    <TextBlock Text="{Binding Title}" Foreground="White" FontWeight="Bold" Margin="10,5" TextTrimming="CharacterEllipsis"/>
+        <!-- Page Header -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,30">
+            <TextBlock Text="📚 My Library" 
+                       Style="{StaticResource TitleText}"
+                       HorizontalAlignment="Left"
+                       FontSize="32"
+                       Margin="0,0,0,10"/>
+            <TextBlock Text="Your collection of owned games." 
+                       Style="{StaticResource LabelText}"
+                       Foreground="{StaticResource TextMuted}"
+                       FontSize="16"/>
+        </StackPanel>
+
+        <!-- Games Library -->
+        <Grid Grid.Row="1">
+            <!-- Games List -->
+            <ListBox x:Name="GamesListBox" 
+                     Background="Transparent" 
+                     BorderThickness="0"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     ScrollViewer.CanContentScroll="False"
+                     SelectionChanged="GamesListBox_SelectionChanged">
+                
+                <!-- Arrange items in a responsive grid -->
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" 
+                                   HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <!-- Game Card Template -->
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="250" 
+                                Height="340" 
+                                Margin="15" 
+                                Background="{StaticResource SecondaryDark}" 
+                                CornerRadius="12">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Black" 
+                                                Direction="270" 
+                                                ShadowDepth="2" 
+                                                BlurRadius="8" 
+                                                Opacity="0.3"/>
+                            </Border.Effect>
+                            
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Cover Art -->
+                                <Border Grid.Row="0" 
+                                        CornerRadius="12,12,0,0"
+                                        ClipToBounds="True">
+                                    <Grid>
+                                        <Image Source="{Binding CoverArtPath}" 
+                                               Stretch="UniformToFill"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                        <!-- Fallback image if no cover art -->
+                                        <Border Background="#404040" 
+                                                Visibility="{Binding CoverArtPath, Converter={x:Static local:NullToVisibilityConverter.Instance}}">
+                                            <TextBlock Text="🎮" 
+                                                       FontSize="48" 
+                                                       HorizontalAlignment="Center" 
+                                                       VerticalAlignment="Center"
+                                                       Foreground="{StaticResource TextMuted}"/>
+                                        </Border>
+                                    </Grid>
+                                </Border>
+
+                                <!-- Game Info -->
+                                <StackPanel Grid.Row="1" 
+                                           Margin="20,15"
+                                           VerticalAlignment="Top">
+                                    
+                                    <!-- Game Title -->
+                                    <TextBlock Text="{Binding Title}" 
+                                               Foreground="{StaticResource TextPrimary}" 
+                                               FontWeight="Bold" 
+                                               FontSize="16"
+                                               TextTrimming="CharacterEllipsis"
+                                               Margin="0,0,0,8"/>
+                                    
+                                    <!-- Publisher -->
+                                    <TextBlock Text="{Binding Publisher.Name}" 
+                                               Foreground="{StaticResource TextMuted}" 
+                                               FontSize="12"
+                                               Margin="0,0,0,15"/>
+                                    
+                                    <!-- Owned Badge -->
+                                    <Border Background="{StaticResource SuccessGreen}"
+                                            CornerRadius="15"
+                                            Padding="12,6"
+                                            HorizontalAlignment="Center">
+                                        <TextBlock Text="✅ Owned" 
+                                                   Foreground="White" 
+                                                   FontWeight="SemiBold"
+                                                   FontSize="12"/>
+                                    </Border>
                                 </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                            </Grid>
+                            
+                            <!-- Hover Effect Triggers -->
+                            <Border.Triggers>
+                                <EventTrigger RoutedEvent="Border.MouseEnter">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Effect">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <DropShadowEffect Color="#007ACC" 
+                                                                        Direction="270" 
+                                                                        ShadowDepth="0" 
+                                                                        BlurRadius="15" 
+                                                                        Opacity="0.5"/>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Border.MouseLeave">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Effect">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <DropShadowEffect Color="Black" 
+                                                                        Direction="270" 
+                                                                        ShadowDepth="2" 
+                                                                        BlurRadius="8" 
+                                                                        Opacity="0.3"/>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Border.Triggers>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- Empty Library Message -->
+            <StackPanel HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"
+                       Visibility="{Binding Items.Count, ElementName=GamesListBox, Converter={x:Static local:CountToVisibilityConverter.Instance}}">
+                <TextBlock Text="📚" 
+                           FontSize="72" 
+                           HorizontalAlignment="Center" 
+                           Foreground="{StaticResource TextMuted}"
+                           Margin="0,0,0,20"/>
+                <TextBlock Text="Your library is empty" 
+                           Style="{StaticResource SubtitleText}"
+                           HorizontalAlignment="Center"
+                           Foreground="{StaticResource TextMuted}"
+                           Margin="0,0,0,10"/>
+                <TextBlock Text="Purchase games from the store to build your collection!" 
+                           Foreground="{StaticResource TextMuted}"
+                           HorizontalAlignment="Center"
+                           TextAlignment="Center"
+                           FontSize="16"/>
             </StackPanel>
-        </ScrollViewer>
+        </Grid>
     </Grid>
 </UserControl>

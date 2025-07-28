@@ -322,3 +322,5 @@ D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\Registr
 D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\bin\Debug\net9.0-windows\BCrypt.Net-Next.dll
 D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\MyOrdersView.g.cs
 D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\MyOrdersView.baml
+D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\App.baml
+D:\.WorkingPlace_Uni\FPT\Github\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs

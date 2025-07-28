@@ -1,0 +1,42 @@
+﻿<Window x:Class="HYDRA.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HYDRA.GUI"
+        mc:Ignorable="d"
+        Title="HYDRA" Height="450" Width="800">
+    <Grid Background="#1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- For the header/nav bar -->
+            <RowDefinition Height="*"/>
+            <!-- For the main content -->
+        </Grid.RowDefinitions>
+
+        <!-- Header/Navigation Bar -->
+        <Border Grid.Row="0" Background="#2D2D30" Padding="10">
+            <DockPanel>
+                <!-- Back button will be added here from code-behind -->
+                <Button x:Name="BackButton" Content="← Back" DockPanel.Dock="Left" Visibility="Collapsed" Click="BackButton_Click"/>
+
+                <!-- NEW: Logout Button -->
+                <Button x:Name="LogoutButton" 
+            Content="Logout" 
+            DockPanel.Dock="Right" 
+            HorizontalAlignment="Right" 
+            Padding="10,5" 
+            Margin="0,0,10,0" 
+            Background="#6c757d" 
+            Foreground="White"
+            Click="LogoutButton_Click"/>
+
+                <!-- Other navigation buttons will go in this panel -->
+                <StackPanel x:Name="HeaderPanel" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+            </DockPanel>
+        </Border>
+
+        <!-- Main Content Area -->
+        <ContentControl Grid.Row="1" x:Name="MainContentArea"/>
+    </Grid>
+</Window>

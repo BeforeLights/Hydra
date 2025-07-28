@@ -1,0 +1,136 @@
+﻿<Window x:Class="HYDRA.GUI.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HYDRA.GUI"
+        mc:Ignorable="d"
+        Title="Create Account - HYDRA" 
+        Height="700" 
+        Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource PrimaryDark}">
+    
+    <Grid>
+        <!-- Main content container -->
+        <Border Style="{StaticResource Card}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                Width="400"
+                Height="600">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    
+                    <!-- Logo Section -->
+                    <StackPanel HorizontalAlignment="Center" Margin="0,0,0,30">
+                        <!-- Mini Hydra Logo -->
+                        <Viewbox Width="80" Height="80" Margin="0,0,0,15">
+                            <Canvas Width="100" Height="100">
+                                <!-- Dragon silhouette -->
+                                <Path Fill="{StaticResource AccentBlue}" 
+                                      Data="M50,10 C45,5 55,5 60,10 C65,15 65,20 60,25 
+                                            C40,20 20,15 15,30 C20,35 35,30 45,35
+                                            C50,40 50,50 50,60
+                                            C55,35 70,30 85,30 C80,15 65,20 60,25
+                                            C55,20 55,15 50,10 Z"/>
+                                <!-- Dragon horns -->
+                                <Path Fill="{StaticResource AccentBlue}"
+                                      Data="M40,8 C38,3 42,3 44,8 C42,12 40,12 40,8 Z"/>
+                                <Path Fill="{StaticResource AccentBlue}"
+                                      Data="M56,8 C58,3 62,3 60,8 C60,12 58,12 56,8 Z"/>
+                                <!-- Eyes -->
+                                <Ellipse Fill="{StaticResource TextPrimary}" 
+                                       Width="4" Height="4" 
+                                       Canvas.Left="45" Canvas.Top="18"/>
+                                <Ellipse Fill="{StaticResource TextPrimary}" 
+                                       Width="4" Height="4" 
+                                       Canvas.Left="53" Canvas.Top="18"/>
+                            </Canvas>
+                        </Viewbox>
+                        
+                        <TextBlock Text="Join Hydra" 
+                                   Style="{StaticResource TitleText}"
+                                   FontSize="28"
+                                   Margin="0,0,0,5"/>
+                        <TextBlock Text="Create your gaming account" 
+                                   Style="{StaticResource LabelText}"
+                                   HorizontalAlignment="Center"
+                                   FontSize="14"
+                                   Foreground="{StaticResource TextMuted}"/>
+                    </StackPanel>
+
+                    <!-- Registration Form -->
+                    <StackPanel Width="320">
+                        <!-- Username Input -->
+                        <TextBlock Text="Username" 
+                                   Style="{StaticResource LabelText}"/>
+                        <TextBox x:Name="UsernameTextBox" 
+                                 Style="{StaticResource ModernTextBox}"
+                                 Margin="0,0,0,15"/>
+
+                        <!-- Email Input -->
+                        <TextBlock Text="Email" 
+                                   Style="{StaticResource LabelText}"/>
+                        <TextBox x:Name="EmailTextBox" 
+                                 Style="{StaticResource ModernTextBox}"
+                                 Margin="0,0,0,15"/>
+
+                        <!-- Password Input -->
+                        <TextBlock Text="Password" 
+                                   Style="{StaticResource LabelText}"/>
+                        <PasswordBox x:Name="PasswordBox" 
+                                     Style="{StaticResource ModernPasswordBox}"
+                                     Margin="0,0,0,15"/>
+
+                        <!-- Confirm Password Input -->
+                        <TextBlock Text="Confirm Password" 
+                                   Style="{StaticResource LabelText}"/>
+                        <PasswordBox x:Name="ConfirmPasswordBox" 
+                                     Style="{StaticResource ModernPasswordBox}"
+                                     Margin="0,0,0,15"/>
+
+                        <!-- Role Selection -->
+                        <TextBlock Text="Account Type" 
+                                   Style="{StaticResource LabelText}"/>
+                        <ComboBox x:Name="RoleComboBox" 
+                                  DisplayMemberPath="RoleName" 
+                                  SelectedValuePath="RoleId" 
+                                  Style="{StaticResource ModernComboBox}"
+                                  Margin="0,0,0,25"/>
+
+                        <!-- Register Button -->
+                        <Button x:Name="RegisterButton" 
+                                Content="Create Account" 
+                                Style="{StaticResource ModernButton}"
+                                FontSize="16" 
+                                Padding="20,12"
+                                Margin="0,0,0,15"
+                                Click="RegisterButton_Click"/>
+                        
+                        <!-- Back to Login -->
+                        <TextBlock HorizontalAlignment="Center" 
+                                   TextAlignment="Center">
+                            <Run Text="Already have an account?" 
+                                 Foreground="{StaticResource TextMuted}"/>
+                            <LineBreak/>
+                            <Hyperlink Foreground="{StaticResource AccentBlue}" 
+                                       Click="BackToLoginHyperlink_Click"
+                                       TextDecorations="None">
+                                <Run Text="Sign in here" FontWeight="SemiBold"/>
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+        
+        <!-- Footer -->
+        <TextBlock Text="© 2024 Hydra Gaming Platform" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Foreground="{StaticResource TextMuted}"
+                   FontSize="12"/>
+    </Grid>
+</Window>

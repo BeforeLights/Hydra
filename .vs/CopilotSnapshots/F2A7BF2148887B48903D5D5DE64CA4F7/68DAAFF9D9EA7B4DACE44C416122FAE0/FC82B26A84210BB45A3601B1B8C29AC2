@@ -1,0 +1,149 @@
+﻿using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using HYDRA.DAL.Models;
+using System.Collections.Generic; // Required for Stack<T>
+
+namespace HYDRA.GUI
+{
+    public partial class MainWindow : Window
+    {
+        private readonly User _currentUser;
+        // This stack will hold our navigation history.
+        private readonly Stack<UserControl> _navigationHistory = new Stack<UserControl>();
+
+        public MainWindow(User loggedInUser)
+        {
+            InitializeComponent();
+            _currentUser = loggedInUser;
+            SetupWelcomeText();
+            SetupUIForUser();
+        }
+
+        private void SetupWelcomeText()
+        {
+            WelcomeText.Text = $"Welcome, {_currentUser.Username} ({_currentUser.Role.RoleName})";
+        }
+
+        // --- THE NEW NAVIGATION SYSTEM ---
+
+        public void NavigateTo(UserControl newView)
+        {
+            // Before we navigate to a new view, we push the *current* one onto the history stack.
+            if (MainContentArea.Content is UserControl currentView)
+            {
+                _navigationHistory.Push(currentView);
+            }
+
+            // Now, show the new view.
+            MainContentArea.Content = newView;
+            UpdateBackButtonVisibility();
+        }
+
+        private void GoBack()
+        {
+            // If there's anything in our history, pop it off and display it.
+            if (_navigationHistory.Count > 0)
+            {
+                MainContentArea.Content = _navigationHistory.Pop();
+                UpdateBackButtonVisibility();
+            }
+        }
+
+        // Add this click handler method
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            GoBack();
+        }
+
+        private void UpdateBackButtonVisibility()
+        {
+            // Only show the back button if there is something to go back to.
+            BackButton.Visibility = _navigationHistory.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Create a new instance of the login window
+            LoginWindow loginWindow = new LoginWindow();
+
+            // Show the new login window
+            loginWindow.Show();
+
+            // Close the current main window, effectively logging the user out
+            this.Close();
+        }
+
+        // Helper method to create styled navigation buttons
+        private Button CreateNavigationButton(string content, string icon = null)
+        {
+            var button = new Button
+            {
+                Content = string.IsNullOrEmpty(icon) ? content : $"{icon} {content}",
+                Style = (Style)FindResource("ModernButton"),
+                Margin = new Thickness(5, 0, 5, 0),
+                Padding = new Thickness(20, 10, 20, 10),
+                FontSize = 14
+            };
+            return button;
+        }
+
+        // --- UI SETUP (MODIFIED TO USE THE NEW NAVIGATION) ---
+        private void SetupUIForUser()
+        {
+            HeaderPanel.Children.Clear();
+            _navigationHistory.Clear(); // Clear history for the new user session
+
+            switch (_currentUser.Role.RoleName)
+            {
+                case "Customer":
+                    var storeButton = CreateNavigationButton("Store", "🛒");
+                    var cartButton = CreateNavigationButton("Cart", "🛍️");
+                    var libraryButton = CreateNavigationButton("Library", "📚");
+                    var ordersButton = CreateNavigationButton("Orders", "📋");
+
+                    storeButton.Click += (s, e) => NavigateTo(new CustomerStoreView(this, _currentUser));
+                    cartButton.Click += (s, e) => NavigateTo(new ShoppingCartView(this, _currentUser));
+                    libraryButton.Click += (s, e) => NavigateTo(new MyLibraryView(_currentUser.UserId));
+                    ordersButton.Click += (s, e) => NavigateTo(new MyOrdersView(_currentUser.UserId));
+
+                    HeaderPanel.Children.Add(storeButton);
+                    HeaderPanel.Children.Add(cartButton);
+                    HeaderPanel.Children.Add(libraryButton);
+                    HeaderPanel.Children.Add(ordersButton);
+
+                    NavigateTo(new CustomerStoreView(this, _currentUser));
+                    break;
+
+                case "Admin":
+                    var userMgmtButton = CreateNavigationButton("User Management", "👥");
+                    var gameMgmtButton = CreateNavigationButton("Game Management", "🎮");
+
+                    userMgmtButton.Click += (s, e) => NavigateTo(new UserManagementView());
+                    gameMgmtButton.Click += (s, e) => NavigateTo(new GameManagementView());
+
+                    HeaderPanel.Children.Add(userMgmtButton);
+                    HeaderPanel.Children.Add(gameMgmtButton);
+
+                    NavigateTo(new UserManagementView());
+                    break;
+
+                case "Manager":
+                    var managerGameMgmtButton = CreateNavigationButton("Game Management", "🎮");
+                    managerGameMgmtButton.Click += (s, e) => NavigateTo(new GameManagementView());
+                    HeaderPanel.Children.Add(managerGameMgmtButton);
+                    
+                    NavigateTo(new GameManagementView());
+                    break;
+            }
+            UpdateBackButtonVisibility(); // Ensure back button is hidden on initial view
+        }
+    }
+}

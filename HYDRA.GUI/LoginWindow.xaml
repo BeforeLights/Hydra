@@ -5,29 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HYDRA.GUI"
         mc:Ignorable="d"
-        Title="HYDRA Login" Height="450" Width="400"
-        WindowStartupLocation="CenterScreen">
-    <Grid Background="#2D2D30" Margin="0,0,0,-84">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-            <TextBlock Text="HYDRA LOGIN" Foreground="White" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+        Title="HYDRA - Gaming Platform" 
+        Height="807" 
+        Width="550"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource PrimaryDark}">
+    
+    <Grid Margin="-6,0,-6,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Main content container with scroll capability -->
+        <ScrollViewer Grid.Row="0" 
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <!-- Main Login Form -->
+                <Border Style="{StaticResource Card}" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        Width="450"
+                        MinHeight="550"
+                        Margin="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        
+                        <!-- Logo Section -->
+                        <StackPanel HorizontalAlignment="Center" Margin="0,20,0,40">
+                            <!-- Hydra Logo using the actual PNG image -->
+                            <Image Width="120" Height="120" 
+                                   Margin="0,0,0,20"
+                                   Source="pack://application:,,,/Images/HYDRA.png"
+                                   RenderOptions.BitmapScalingMode="HighQuality"/>
+                            
+                            <!-- App Title -->
+                            <TextBlock Text="Gaming Platform" 
+                                       Style="{StaticResource LabelText}"
+                                       HorizontalAlignment="Center"
+                                       FontSize="16"
+                                       Foreground="{StaticResource TextMuted}"/>
+                        </StackPanel>
 
-            <!-- Username Input -->
-            <TextBlock Text="Username" Foreground="White" Margin="0,0,0,5"/>
-            <TextBox x:Name="UsernameTextBox" Padding="5" FontSize="14" Margin="0,0,0,15"/>
+                        <!-- Login Form -->
+                        <StackPanel Width="350" Margin="0,0,0,20">
+                            <TextBlock Text="Welcome Back" 
+                                       Style="{StaticResource SubtitleText}"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,0,0,30"/>
 
-            <!-- Password Input -->
-            <TextBlock Text="Password" Foreground="White" Margin="0,0,0,5"/>
-            <PasswordBox x:Name="PasswordBox" Padding="5" FontSize="14" Margin="0,0,0,25"/>
+                            <!-- Username Input -->
+                            <TextBlock Text="Username" 
+                                       Style="{StaticResource LabelText}"/>
+                            <TextBox x:Name="UsernameTextBox" 
+                                     Style="{StaticResource ModernTextBox}"
+                                     Margin="0,0,0,20"/>
 
-            <!-- Login Button -->
-            <Button x:Name="LoginButton" Content="Login" FontSize="16" FontWeight="Bold" Padding="10" 
-                Background="#007ACC" Foreground="White" BorderThickness="0" Click="LoginButton_Click"/>
-            <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0">
-                <Run Text="Don't have an account?" Foreground="Gray"/>
-                <Hyperlink Foreground="#0099FF" Click="RegisterHyperlink_Click">
-                    <Run Text="Register here"/>
-                </Hyperlink>
-            </TextBlock>
-        </StackPanel>
+                            <!-- Password Input -->
+                            <TextBlock Text="Password" 
+                                       Style="{StaticResource LabelText}"/>
+                            <PasswordBox x:Name="PasswordBox" 
+                                         Style="{StaticResource ModernPasswordBox}"
+                                         Margin="0,0,0,30"/>
+
+                            <!-- Login Button -->
+                            <Button x:Name="LoginButton" 
+                                    Content="Sign In" 
+                                    Style="{StaticResource ModernButton}"
+                                    FontSize="16" 
+                                    Padding="20,12"
+                                    Margin="0,0,0,25"
+                                    Click="LoginButton_Click"/>
+                            
+                            <!-- Registration Link -->
+                            <TextBlock HorizontalAlignment="Center" 
+                                       TextAlignment="Center"
+                                       Margin="0,0,0,20">
+                                <Run Text="Don't have an account?" 
+                                     Foreground="{StaticResource TextMuted}"
+                                     FontSize="14"/>
+                                <LineBreak/>
+                                <Hyperlink Foreground="{StaticResource AccentBlue}" 
+                                           Click="RegisterHyperlink_Click"
+                                           TextDecorations="None">
+                                    <Run Text="Create one here" 
+                                         FontWeight="SemiBold"
+                                         FontSize="14"/>
+                                </Hyperlink>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Demo Credentials Info -->
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- Footer -->
+        <TextBlock Grid.Row="1"
+                   Text="© 2024 Hydra Gaming Platform" 
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,20"
+                   Foreground="{StaticResource TextMuted}"
+                   FontSize="12"/>
     </Grid>
 </Window>

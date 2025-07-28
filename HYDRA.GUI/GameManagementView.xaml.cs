@@ -2,6 +2,7 @@
 using HYDRA.DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,8 +34,27 @@ namespace HYDRA.GUI
             // Get the list of games from the BLL
             var games = _gameService.GetAllGames();
 
+            // Sort by title to make duplicates easier to spot
+            games = games.OrderBy(g => g.Title).ThenBy(g => g.GameId).ToList();
+
             // Set the DataGrid's data source to our list of games
             GamesDataGrid.ItemsSource = games;
+
+            // Check for duplicates and show a warning
+            var duplicates = games.GroupBy(g => g.Title.ToLower())
+                                 .Where(group => group.Count() > 1)
+                                 .ToList();
+
+            if (duplicates.Any())
+            {
+                var duplicateCount = duplicates.Sum(g => g.Count());
+                var uniqueTitles = duplicates.Count();
+                MessageBox.Show($"Warning: Found {duplicateCount} games with {uniqueTitles} duplicate title(s). " +
+                               "Consider cleaning up duplicate entries.", 
+                               "Duplicate Games Detected", 
+                               MessageBoxButton.OK, 
+                               MessageBoxImage.Warning);
+            }
         }
 
         private void AddNewGameButton_Click(object sender, RoutedEventArgs e)
@@ -94,5 +114,11 @@ namespace HYDRA.GUI
                 LoadGames(); // Refresh the list
             }
         }
+
+        private void GamesDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
+    // Remove the BoolToColorConverter and BoolToTextConverter classes from here - they're now in SharedConverters.cs
 }

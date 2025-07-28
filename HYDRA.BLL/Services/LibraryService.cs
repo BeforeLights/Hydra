@@ -28,9 +28,19 @@ namespace HYDRA.BLL.Services
         {
             // Find all library entries for the user,
             // select the associated Game object for each entry,
-            // and return it as a list.
+            // and return it as a list with related data included.
             return _context.LibraryEntries
                            .Where(le => le.UserId == userId)
+                           .Include(le => le.Game)
+                           .ThenInclude(g => g.Publisher) // Include publisher information
+                           .Include(le => le.Game)
+                           .ThenInclude(g => g.GameImages) // Include game images
+                           .Include(le => le.Game)
+                           .ThenInclude(g => g.Genres) // Include genres
+                           .Include(le => le.Game)
+                           .ThenInclude(g => g.Platforms) // Include platforms
+                           .Include(le => le.Game)
+                           .ThenInclude(g => g.Developers) // Include developers
                            .Select(le => le.Game) // This is the key part that gets the Game details
                            .AsNoTracking()
                            .ToList();
