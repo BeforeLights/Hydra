@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HYDRA.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e05c0d35d8347baa525a4b08f991e0a4d8146f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1030384d2f678a3c4dd7427959ec76474bc9bd85")]
 [assembly: System.Reflection.AssemblyProductAttribute("HYDRA.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HYDRA.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
