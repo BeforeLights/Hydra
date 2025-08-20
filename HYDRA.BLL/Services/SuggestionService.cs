@@ -51,17 +51,17 @@ namespace HYDRA.BLL.Services
         // --- RAWG DTOs & helpers ---
         private record RawgSearchResponse(List<RawgShort> Results);
         private record RawgShort(int Id, string Name);
-        private record RawgDetail(int Id, 
+        private record RawgDetail(int Id,
                                   string Name,
-                                  string Slug, 
-                                  string? Released, 
+                                  string Slug,
+                                  string? Released,
                                   int? Metacritic,
-                                  
-                                  string? Background_Image, 
-                                  string? Description, 
-                                  string? Description_Raw, 
-                                  List<RawgPlatformEntry>? Platforms, 
-                                  List<RawgGenre>? Genres,                           
+
+                                  string? Background_Image,
+                                  string? Description,
+                                  string? Description_Raw,
+                                  List<RawgPlatformEntry>? Platforms,
+                                  List<RawgGenre>? Genres,
                                   List<RawgPublisher>? Publishers);
         private record RawgPlatformEntry(RawgPlatform Platform);
         private record RawgPlatform(int Id, string Name, string Slug);
@@ -75,7 +75,7 @@ namespace HYDRA.BLL.Services
            string? BackgroundImage,
            string[] Platforms,
            string[] Genres,
-           
+
            string[] Publishers,
            DateOnly? ReleaseDate);
 
@@ -139,10 +139,18 @@ namespace HYDRA.BLL.Services
                 desc,
                 d.Background_Image,
                 platforms,
-                genres, 
+                genres,
                 publishers,
                 release
             );
+        }
+        public Task<List<int>> GetVotedSuggestionIdsAsync(int userId, IEnumerable<int> suggestionIds)
+        {
+            var ids = suggestionIds.ToList();
+            return _ctx.GameSuggestionVotes
+                .Where(v => v.UserId == userId && ids.Contains(v.SuggestionId))
+                .Select(v => v.SuggestionId)
+                .ToListAsync();
         }
         public async Task<RawgClientDetail?> GetRawgDetailByNameForClientAsync(string name, string apiKey)
         {
@@ -196,7 +204,7 @@ namespace HYDRA.BLL.Services
             _ctx.GameSuggestions.Add(s);
             await _ctx.SaveChangesAsync();
 
-            
+
             RawgDetail? detail = null;
             if (rawgId.HasValue) detail = await GetRawgDetailAsync(rawgId.Value, rawgApiKey);
             if (detail == null) detail = await FindBestFromTitleAsync(title, rawgApiKey);
@@ -219,10 +227,10 @@ namespace HYDRA.BLL.Services
                     ? string.Join("; ", detail.Genres.Select(g => g.Name).Where(n => !string.IsNullOrWhiteSpace(n)))
                     : null;
 
-                var publishersStr = detail?.Publishers != null                   
+                var publishersStr = detail?.Publishers != null
                     ? string.Join("; ", detail.Publishers.Select(g => g.Name).Where(n => !string.IsNullOrWhiteSpace(n)))
                     : null;
-                
+
 
                 s.RawgId = detail.Id;
                 s.RawgSlug = detail.Slug;
@@ -230,7 +238,7 @@ namespace HYDRA.BLL.Services
                 s.RawgReleased = released;
                 s.RawgMetacritic = detail.Metacritic;
                 s.RawgBackgroundImg = detail.Background_Image;
-                s.RawgPlatforms = platformsStr;   
+                s.RawgPlatforms = platformsStr;
                 s.RawgGenres = genresStr;
                 s.RawgPublishers = publishersStr;
                 if (string.IsNullOrWhiteSpace(s.Description))
@@ -239,9 +247,10 @@ namespace HYDRA.BLL.Services
                 _ctx.GameSuggestions.Update(s);
                 await _ctx.SaveChangesAsync();
             }
-          
+
             return s;
         }
+
 
         public async Task<bool> VoteAsync(int userId, int suggestionId)
         {
@@ -296,26 +305,26 @@ namespace HYDRA.BLL.Services
 
 
         public async Task<List<PendingItemDto>> GetTopPendingAsync(int take = 100)
-            {
-                return await _ctx.GameSuggestions
-                    .AsNoTracking()
-                    .Where(s => s.Status == (byte)SuggestionStatus.Pending)
-                    .Select(s => new PendingItemDto
-                    {
-                        Id = s.SuggestionId,
-                        Title = s.RawgName ?? s.Title,
-                        Votes = s.Votes.Count(),
-                        RawgId = s.RawgId,
-                        RawgBackgroundImg = s.RawgBackgroundImg,
-                        CreatedAt = s.CreatedAt,
-                        RawgReleased = s.RawgReleased,
-                        RawgPublishers = s.RawgPublishers
-                    })
-                    .OrderByDescending(x => x.Votes)
-                    .ThenBy(x => x.CreatedAt)
-                    .Take(take)
-                    .ToListAsync();
-            }
+        {
+            return await _ctx.GameSuggestions
+                .AsNoTracking()
+                .Where(s => s.Status == (byte)SuggestionStatus.Pending)
+                .Select(s => new PendingItemDto
+                {
+                    Id = s.SuggestionId,
+                    Title = s.RawgName ?? s.Title,
+                    Votes = s.Votes.Count(),
+                    RawgId = s.RawgId,
+                    RawgBackgroundImg = s.RawgBackgroundImg,
+                    CreatedAt = s.CreatedAt,
+                    RawgReleased = s.RawgReleased,
+                    RawgPublishers = s.RawgPublishers
+                })
+                .OrderByDescending(x => x.Votes)
+                .ThenBy(x => x.CreatedAt)
+                .Take(take)
+                .ToListAsync();
+        }
         public async Task<List<PendingItemDto>> GetPendingAsync(int take)
         {
             var query = await _ctx.GameSuggestions
@@ -374,12 +383,12 @@ namespace HYDRA.BLL.Services
                         publisherId = existing.CompanyId;
 
                     //  tự động tạo Company mới, mở comment 4 dòng dưới:
-                     else
+                    else
                     {
                         var company = new Company { Name = firstPublisher };
                         _ctx.Companies.Add(company);
-                         await _ctx.SaveChangesAsync();
-                         publisherId = company.CompanyId;
+                        await _ctx.SaveChangesAsync();
+                        publisherId = company.CompanyId;
                     }
                 }
             }

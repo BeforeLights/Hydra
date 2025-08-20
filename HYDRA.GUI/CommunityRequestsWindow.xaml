@@ -55,11 +55,15 @@
                                 <Image Source="{Binding rawgBackgroundImg}" Stretch="Uniform"/>
                             </Border>
                             <StackPanel Grid.Column="1">
-                                <TextBlock Text="{Binding title}" Foreground="{StaticResource TextPrimary}" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding id, StringFormat=#\{0\}}" Foreground="{StaticResource TextMuted}" FontSize="11"/>
-                                
+                                <TextBlock Text="{Binding title}"
+                   Foreground="{StaticResource TextPrimary}"
+                   FontWeight="SemiBold"/>
+                                <!-- ID hiển thị dạng #123 -->
+                                <TextBlock Text="{Binding id, StringFormat=#\{0\}}"
+                   Foreground="{StaticResource TextMuted}" FontSize="11"/>
+
                             </StackPanel>
-                            
+
                             <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
                                 <Border Background="{StaticResource AccentBlue}" CornerRadius="4" Padding="6,2">
                                     <TextBlock Text="{Binding votes}" Foreground="White" FontWeight="Bold"/>

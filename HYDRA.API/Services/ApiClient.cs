@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net.Http;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -102,7 +104,7 @@ namespace Hydra.API.Services
 
     public record RawgItem
     {
-        public int rawgId { get; set; }          
+        public int rawgId { get; set; }
         public string name { get; set; } = "";
         public string? rawgBackgroundImg { get; set; }
     }
@@ -125,7 +127,7 @@ namespace Hydra.API.Services
         public string Name { get; set; } = "";
         public string? Description { get; set; }
         public string? BackgroundImage { get; set; }
-        public string[]? Platforms { get; set; }   
+        public string[]? Platforms { get; set; }
         public string[]? Genres { get; set; }
         public DateOnly? ReleaseDate { get; set; }
         public string[]? Released { get; set; }
@@ -140,23 +142,45 @@ namespace Hydra.API.Services
         public int? RawgId { get; set; }
         public string? RawgBackgroundImg { get; set; }
         public DateTime CreatedAt { get; set; }
-        public string? RawgReleased { get; set; }      
+        public string? RawgReleased { get; set; }
         public string? RawgPublishers { get; set; }
         public bool HasVoted { get; set; }
     }
 
-    public record TopSuggestionItem
+    public class TopSuggestionItem : INotifyPropertyChanged
     {
-        public int id { get; set; }
-        public string title { get; set; } = "";
-        public int votes { get; set; }
-        public string? rawgBackgroundImg { get; set; }
-        public int? rawgId { get; set; }                 
-        public DateTime createdAt { get; set; }          
-        public string? rawgPublishers { get; set; }      
-        public string? rawgReleased { get; set; }
+        int _id;
+        string _title = "";
+        int _votes;
+        string? _rawgBackgroundImg;
+        int? _rawgId;
+        DateTime _createdAt;
+        string? _rawgPublishers;
+        string? _rawgReleased;
+        bool _hasVoted;
 
-        public bool hasVoted { get; set; }
+        public int id { get => _id; set => Set(ref _id, value); }
+        public string title { get => _title; set => Set(ref _title, value); }
+
+        public int votes { get => _votes; set => Set(ref _votes, value); }
+        public bool hasVoted { get => _hasVoted; set => Set(ref _hasVoted, value); }
+
+        public string? rawgBackgroundImg { get => _rawgBackgroundImg; set => Set(ref _rawgBackgroundImg, value); }
+        public int? rawgId { get => _rawgId; set => Set(ref _rawgId, value); }
+        public DateTime createdAt { get => _createdAt; set => Set(ref _createdAt, value); }
+        public string? rawgPublishers { get => _rawgPublishers; set => Set(ref _rawgPublishers, value); }
+        public string? rawgReleased { get => _rawgReleased; set => Set(ref _rawgReleased, value); }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string? name = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        protected bool Set<T>(ref T field, T value, [CallerMemberName] string? name = null)
+        {
+            if (Equals(field, value)) return false;
+            field = value;
+            OnPropertyChanged(name);
+            return true;
+        }
     }
     public record VoteResult
     {
