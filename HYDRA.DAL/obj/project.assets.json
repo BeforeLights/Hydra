@@ -5004,23 +5004,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dangk\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN212\\Team_Project\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
       "projectName": "HYDRA.DAL",
-      "projectPath": "D:\\PRN212\\Team_Project\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
-      "packagesPath": "C:\\Users\\dangk\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN212\\Team_Project\\Hydra\\HYDRA.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dangk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5094,7 +5094,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

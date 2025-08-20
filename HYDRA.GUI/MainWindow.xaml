@@ -12,7 +12,7 @@
         MinWidth="800"
         WindowState="Maximized"
         Background="{StaticResource PrimaryDark}">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -64,6 +64,13 @@
                         Margin="20,0,0,0"
                         Click="BackButton_Click"/>
 
+                <Button x:Name="btnRequestGame"
+        Content="Request Game" Width="120" Height="32" Margin="331,10,543,3"
+        Click="OpenRequest_Click" Grid.Column="2" />
+
+                
+
+
                 <!-- Navigation Buttons Panel -->
                 <StackPanel Grid.Column="2" 
                            x:Name="HeaderPanel" 
@@ -82,7 +89,7 @@
                                FontSize="14"
                                VerticalAlignment="Center"
                                Margin="0,0,15,0"/>
-                    
+
                     <!-- Logout Button -->
                     <Button x:Name="LogoutButton" 
                             Content="Sign Out" 
