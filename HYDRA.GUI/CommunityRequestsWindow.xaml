@@ -1,0 +1,124 @@
+﻿<Window x:Class="Hydra.Gui.CommunityRequestsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Community Requests" Height="680" Width="980"
+        Background="{StaticResource PrimaryDark}">
+    <Grid Margin="14">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="14"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <DockPanel Grid.Row="0">
+            <TextBlock Text="Requested Games" FontSize="20" FontWeight="Bold"
+                       Foreground="{StaticResource TextPrimary}" />
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                <TextBox x:Name="txtSearch" Width="240" Margin="0,0,8,0"
+                         Style="{StaticResource ModernTextBox}" />
+                <Button Content="Search" Style="{StaticResource ModernButton}"
+                        Click="Search_Click"/>
+                <Button Content="Refresh" Style="{StaticResource ModernButton}"
+                        Margin="8,0,0,0" Click="Refresh_Click"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- LEFT: list -->
+        <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource Card}">
+            <ListView x:Name="lv"
+                      SelectionMode="Single"
+                      MouseDoubleClick="lv_MouseDoubleClick"
+                      SelectionChanged="lv_SelectionChanged"
+                      Background="Transparent"
+                      BorderThickness="0">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Margin" Value="0,2"/>
+                        <Setter Property="Padding" Value="8"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="60"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="64" Height="36" Background="#222" CornerRadius="4"
+                                    Margin="0,0,8,0" VerticalAlignment="Center">
+                                <Image Source="{Binding rawgBackgroundImg}" Stretch="Uniform"/>
+                            </Border>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="{Binding title}" Foreground="{StaticResource TextPrimary}" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding id, StringFormat=#\{0\}}" Foreground="{StaticResource TextMuted}" FontSize="11"/>
+                                
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Border Background="{StaticResource AccentBlue}" CornerRadius="4" Padding="6,2">
+                                    <TextBlock Text="{Binding votes}" Foreground="White" FontWeight="Bold"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+
+        <!-- RIGHT: details -->
+        <Border Grid.Row="1" Grid.Column="2" Style="{StaticResource Card}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" CornerRadius="6" Background="#111" ClipToBounds="True">
+                    <Image x:Name="imgCover" Stretch="UniformToFill"/>
+                </Border>
+
+                <StackPanel Grid.Row="1" Margin="0,10,0,2">
+                    <TextBlock x:Name="txtTitle" FontSize="18" FontWeight="Bold"
+                               Foreground="{StaticResource TextPrimary}"/>
+                    <TextBlock x:Name="txtVotes" Foreground="{StaticResource TextSecondary}" />
+                </StackPanel>
+
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock Text="Summary" Foreground="{StaticResource TextSecondary}" Margin="0,0,0,4"/>
+                        <TextBlock x:Name="txtDesc" TextWrapping="Wrap" Foreground="{StaticResource TextSecondary}"/>
+
+                        <TextBlock Text="Platforms" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,4"/>
+                        <TextBlock x:Name="txtPlatforms" TextWrapping="Wrap" Foreground="{StaticResource TextPrimary}"/>
+
+                        <TextBlock Text="Genres" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,4"/>
+                        <TextBlock x:Name="txtGenres" TextWrapping="Wrap" Foreground="{StaticResource TextPrimary}"/>
+
+                        <TextBlock Text="Release Date" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,4"/>
+                        <TextBlock x:Name="txtRelease" Foreground="{StaticResource TextPrimary}"/>
+
+                        <TextBlock Text="Publishers" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,4"/>
+                        <TextBlock x:Name="txtPublishers" TextWrapping="Wrap" Foreground="{StaticResource TextPrimary}"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button x:Name="btnVote" Content="Vote"
+                            Style="{StaticResource ModernButton}"
+                            Click="Vote_Click"/>
+                    <Button x:Name="btnUnvote" Content="Unvote"
+                            Style="{StaticResource SecondaryButton}"
+                            Margin="8,0,0,0" Click="Unvote_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

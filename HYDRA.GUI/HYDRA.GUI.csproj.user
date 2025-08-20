@@ -2,6 +2,12 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AdminApproveWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CommunityRequestsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CustomerStoreView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +30,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="RegistrationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RequestGameWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ShoppingCartView.xaml.cs">
