@@ -2,10 +2,12 @@
 using HYDRA.DAL.Models;
 using System;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 
@@ -20,12 +22,12 @@ namespace Hydra.Gui
 
         private ObservableCollection<TopSuggestionItem> _all = new();
         private ObservableCollection<TopSuggestionItem> _view = new();
-
+        private bool _initialized;
         public CommunityRequestsWindow(User user)
         {
             InitializeComponent();
             _currentUser = user;
-            lv.ItemsSource = _view;
+
             Loaded += async (_, __) => await LoadAsync();
         }
 
@@ -33,32 +35,52 @@ namespace Hydra.Gui
         {
             try
             {
-                // QUAN TRỌNG: truyền userId để server set hasVoted đúng
                 var list = await _api.GetTopSuggestionsAsync(_currentUser.UserId, 200);
 
-                _all = new ObservableCollection<TopSuggestionItem>(
-                    list.OrderByDescending(x => x.votes)
-                        .ThenBy(x => x.title));
+                if (!_initialized)
+                {
+                    // Lần đầu: bind & cấu hình sort/filter
+                    _view = new ObservableCollection<TopSuggestionItem>(list);
+                    lv.ItemsSource = _view;
 
-                ApplyFilter();
+                    var cv = CollectionViewSource.GetDefaultView(lv.ItemsSource);
+                    cv.SortDescriptions.Clear();
+                    cv.SortDescriptions.Add(new SortDescription(nameof(TopSuggestionItem.votes), ListSortDirection.Descending));
+                    cv.SortDescriptions.Add(new SortDescription(nameof(TopSuggestionItem.title), ListSortDirection.Ascending));
 
-                // luôn hiển thị ngay 1 item
-                if (_view.Count > 0 && lv.SelectedIndex < 0)
-                    lv.SelectedIndex = 0;
+                    ApplyFilter();
+                    if (lv.Items.Count > 0) lv.SelectedIndex = 0;
+
+                    _initialized = true;
+                }
+                else
+                {
+                    // Các lần sau: cập nhật tại chỗ (KHÔNG thay ItemsSource)
+                    Sync(_view, list);
+                    CollectionViewSource.GetDefaultView(lv.ItemsSource)?.Refresh();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "API");
             }
         }
+        private static void Sync(ObservableCollection<TopSuggestionItem> target, IEnumerable<TopSuggestionItem> src)
+        {
+            target.Clear();
+            foreach (var x in src) target.Add(x);
+        }
 
         private void ApplyFilter()
         {
             string q = txtSearch.Text?.Trim() ?? "";
-            _view.Clear();
-            foreach (var x in _all.Where(x => string.IsNullOrWhiteSpace(q) || x.title.Contains(q, StringComparison.OrdinalIgnoreCase)))
-                _view.Add(x);
+            var cv = CollectionViewSource.GetDefaultView(lv.ItemsSource);
+            cv.Filter = o => o is TopSuggestionItem x &&
+                             (string.IsNullOrWhiteSpace(q) ||
+                              x.title.Contains(q, StringComparison.OrdinalIgnoreCase));
+            cv.Refresh();
         }
+
 
         private void Refresh_Click(object sender, RoutedEventArgs e) => _ = LoadAsync();
 
@@ -72,15 +94,19 @@ namespace Hydra.Gui
                 _ = LoadDetailAsync(it); // nạp detail
             }
         }
+        private ListCollectionView View =>
+    (ListCollectionView)CollectionViewSource.GetDefaultView(lv.ItemsSource);
 
+        private bool _busy;
         private void lv_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (_busy) return;
             _cur = lv.SelectedItem as TopSuggestionItem;
             RenderRightPanel(_cur);
             UpdateButtons(_cur);
             if (_cur != null) _ = LoadDetailAsync(_cur);
         }
-        
+
         private async Task LoadDetailAsync(TopSuggestionItem item)
         {
             try
@@ -127,7 +153,7 @@ namespace Hydra.Gui
             {
                 imgCover.Source = null;
                 txtTitle.Text = "";
-                txtVotes.Text = $"Votes: {it.votes}";
+                txtVotes.Text = "";
                 txtDesc.Text = "";
                 btnVote.IsEnabled = btnUnvote.IsEnabled = false;
                 return;
@@ -163,53 +189,78 @@ namespace Hydra.Gui
         }
         private void UpdateButtons(TopSuggestionItem? it)
         {
-            if (it == null)
-            {
-                btnVote.IsEnabled = btnUnvote.IsEnabled = false;
-                return;
-            }
-
-            // hasVoted = user đã vote HOẶC là creator (server tính giúp)
+            if (it == null) { btnVote.IsEnabled = btnUnvote.IsEnabled = false; return; }
             btnVote.IsEnabled = !it.hasVoted;
-            btnUnvote.IsEnabled = it.hasVoted; // tùy policy: có thể cho unvote nếu không phải creator
+            btnUnvote.IsEnabled = it.hasVoted;
         }
+
 
         private async void Vote_Click(object sender, RoutedEventArgs e)
         {
-            if (_cur == null) return;
+            if (_cur == null || _busy) return;
+            _busy = true;
             btnVote.IsEnabled = btnUnvote.IsEnabled = false;
+
             try
             {
                 var res = await _api.VoteAsyncEx(_currentUser.UserId, _cur.id);
                 if (res.added)
                 {
-                    _cur.votes += 1;
-                    _cur.hasVoted = true;
+                    // Cập nhật data + resort an toàn
+                    using (View.DeferRefresh())
+                    {
+                        _cur.votes += 1;
+                        _cur.hasVoted = true;
+                    }
                     txtVotes.Text = $"Votes: {_cur.votes}";
-                    lv.Items.Refresh();
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "API"); }
-            finally { UpdateButtons(_cur); }
+            finally
+            {
+                _busy = false;
+
+                // BỎ CHỌN + trả focus về list để chọn item khác ngay
+                lv.SelectedItem = null;
+                Keyboard.ClearFocus();
+                lv.Focus();
+                Mouse.Capture(null);
+
+                UpdateButtons(_cur);
+            }
         }
 
         private async void Unvote_Click(object sender, RoutedEventArgs e)
         {
-            if (_cur == null) return;
+            if (_cur == null || _busy) return;
+            _busy = true;
             btnVote.IsEnabled = btnUnvote.IsEnabled = false;
+
             try
             {
                 var res = await _api.UnvoteAsyncEx(_currentUser.UserId, _cur.id);
-                if (res.removed )
+                if (res.removed && _cur.votes > 0)
                 {
-                    _cur.votes -= 1;
-                    _cur.hasVoted = false;
+                    using (View.DeferRefresh())
+                    {
+                        _cur.votes -= 1;
+                        _cur.hasVoted = false;
+                    }
                     txtVotes.Text = $"Votes: {_cur.votes}";
-                    lv.Items.Refresh();
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "API"); }
-            finally { UpdateButtons(_cur); }
+            finally
+            {
+                _busy = false;
+
+                lv.SelectedItem = null;
+                Keyboard.ClearFocus();
+                lv.Focus();
+                Mouse.Capture(null);
+
+                UpdateButtons(_cur);
+            }
         }
 
     }

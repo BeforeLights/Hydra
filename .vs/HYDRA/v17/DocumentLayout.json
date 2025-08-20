@@ -7,67 +7,37 @@
       "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\suggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\controllers\\suggestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\controllers\\suggestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\communityrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\communityrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\controllers\\rawgcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\controllers\\rawgcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\requestgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\requestgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\communityrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\communityrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\communityrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\communityrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LG\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\controllers\\suggestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\controllers\\suggestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\adminapprovewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -86,8 +56,16 @@
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\requestgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\requestgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\adminapprovewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -96,6 +74,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\controllers\\rawgcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|solutionrelative:hydra.api\\controllers\\rawgcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{113263CE-608F-5525-1569-038BA9175FBE}|HYDRA.API\\HYDRA.API.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -126,74 +108,40 @@
       "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\libraryentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\hydra.gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\hydra.gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\requestgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\requestgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gamesuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gamesuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gamesuggestionvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gamesuggestionvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LG\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\requestgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\requestgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gamesuggestionvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gamesuggestionvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gamesuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gamesuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mylibraryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\registrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -206,6 +154,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\mylibraryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\mylibraryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\customerstoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gamemanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gamemanagementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -232,6 +200,26 @@
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\myordersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\myordersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\shoppingcartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -240,8 +228,16 @@
       "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\images\\hydra.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\hydra.gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\hydra.gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.bll\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D641F1-DEB4-4A40-A998-6F0000008E68}|HYDRA.BLL\\HYDRA.BLL.csproj|solutionrelative:hydra.bll\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{44CB95EC-D5D4-43E4-8133-0FE72FF53E78}|HYDRA.GUI\\HYDRA.GUI.csproj|solutionrelative:hydra.gui\\gameeditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -250,6 +246,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|solutionrelative:hydra.dal\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A758B39-A04F-4C69-AE61-5BE3F35E14D3}|HYDRA.DAL\\HYDRA.DAL.csproj|c:\\users\\admin\\downloads\\hydra\\hydra\\hydra\\hydra\\hydra.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -271,15 +271,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 258,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -291,42 +287,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CommunityRequestsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CommunityRequestsWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\CommunityRequestsWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CommunityRequestsWindow.xaml.cs",
               "RelativeToolTip": "HYDRA.GUI\\CommunityRequestsWindow.xaml.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAQwMAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAuwPcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:02:27.956Z"
+              "WhenOpened": "2025-08-19T11:02:27.956Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ApiClient.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Services\\ApiClient.cs",
               "RelativeDocumentMoniker": "HYDRA.API\\Services\\ApiClient.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Services\\ApiClient.cs",
               "RelativeToolTip": "HYDRA.API\\Services\\ApiClient.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAJkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T13:24:30.584Z"
+              "WhenOpened": "2025-08-18T13:24:30.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "CommunityRequestsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CommunityRequestsWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\CommunityRequestsWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CommunityRequestsWindow.xaml",
               "RelativeToolTip": "HYDRA.GUI\\CommunityRequestsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-19T11:02:05.125Z"
+              "WhenOpened": "2025-08-19T11:02:05.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MainWindow.xaml.cs",
@@ -338,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "SuggestionsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Controllers\\SuggestionsController.cs",
               "RelativeDocumentMoniker": "HYDRA.API\\Controllers\\SuggestionsController.cs",
@@ -350,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "AdminApproveWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\AdminApproveWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\AdminApproveWindow.xaml",
@@ -361,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "LibraryService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\LibraryService.cs",
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\LibraryService.cs",
@@ -379,14 +378,14 @@
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\SuggestionService.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\SuggestionService.cs",
               "RelativeToolTip": "HYDRA.BLL\\Services\\SuggestionService.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAwwJAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAuwKQBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T12:05:23.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MainWindow.xaml",
@@ -397,18 +396,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\App.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\App.xaml",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\App.xaml",
               "RelativeToolTip": "HYDRA.GUI\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T06:54:03.701Z"
+              "WhenOpened": "2025-07-25T06:54:03.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\AssemblyInfo.cs",
@@ -420,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\appsettings.json",
               "RelativeDocumentMoniker": "HYDRA.GUI\\appsettings.json",
@@ -432,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "RequestGameWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\RequestGameWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\RequestGameWindow.xaml.cs",
@@ -444,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 17,
               "Title": "AdminApproveWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\AdminApproveWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\AdminApproveWindow.xaml.cs",
@@ -456,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 18,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\UserService.cs",
@@ -468,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "RawgController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Controllers\\RawgController.cs",
               "RelativeDocumentMoniker": "HYDRA.API\\Controllers\\RawgController.cs",
@@ -480,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "HYDRA.API\\Properties\\launchSettings.json",
@@ -492,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "HydraContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\HydraContext.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\HydraContext.cs",
@@ -504,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "HydraContext.Suggestions.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\HydraContext.Suggestions.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\HydraContext.Suggestions.cs",
@@ -516,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "HYDRA.API.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\HYDRA.API.csproj",
               "RelativeDocumentMoniker": "HYDRA.API\\HYDRA.API.csproj",
@@ -528,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "HYDRA.API.http",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\HYDRA.API.http",
               "RelativeDocumentMoniker": "HYDRA.API\\HYDRA.API.http",
@@ -540,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\appsettings.json",
               "RelativeDocumentMoniker": "HYDRA.API\\appsettings.json",
@@ -552,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 26,
               "Title": "LibraryEntry.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\LibraryEntry.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\LibraryEntry.cs",
@@ -564,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 6,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -576,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 27,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\Game.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Game.cs",
@@ -588,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 28,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\App.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\App.xaml.cs",
@@ -600,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "RequestGameWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\RequestGameWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\RequestGameWindow.xaml",
@@ -611,19 +611,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Program.cs",
               "RelativeDocumentMoniker": "HYDRA.API\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\Program.cs",
               "RelativeToolTip": "HYDRA.API\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T12:06:54.106Z"
+              "WhenOpened": "2025-08-18T12:06:54.106Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 30,
               "Title": "GameSuggestionVote.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\GameSuggestionVote.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\GameSuggestionVote.cs",
@@ -635,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "GameSuggestion.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\GameSuggestion.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\GameSuggestion.cs",
@@ -647,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 32,
               "Title": "GameDetailView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameDetailView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameDetailView.xaml.cs",
@@ -659,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "GameDetailView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameDetailView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameDetailView.xaml",
@@ -670,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 34,
               "Title": "CustomerStoreView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\CustomerStoreView.xaml",
@@ -681,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 7,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\LG\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LG\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
@@ -694,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 35,
               "Title": "MyLibraryView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MyLibraryView.xaml",
@@ -705,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 36,
               "Title": "RegistrationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\RegistrationWindow.xaml.cs",
@@ -717,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 37,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\OrderService.cs",
@@ -729,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 38,
               "Title": "MyLibraryView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MyLibraryView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MyLibraryView.xaml.cs",
@@ -741,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 39,
               "Title": "CustomerStoreView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\CustomerStoreView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\CustomerStoreView.xaml.cs",
@@ -753,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 40,
               "Title": "BoolToTextConverter.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\BoolToTextConverter.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\BoolToTextConverter.cs",
@@ -765,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 41,
               "Title": "GameManagementView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameManagementView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameManagementView.xaml",
@@ -776,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 42,
               "Title": "BoolToColorConverter.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\BoolToColorConverter.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\BoolToColorConverter.cs",
@@ -788,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 43,
               "Title": "NullToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\NullToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\NullToVisibilityConverter.cs",
@@ -800,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 44,
               "Title": "GameManagementView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameManagementView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameManagementView.xaml.cs",
@@ -812,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 45,
               "Title": "ShoppingCartView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\ShoppingCartView.xaml.cs",
@@ -824,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 46,
               "Title": "UserManagementView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\UserManagementView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\UserManagementView.xaml.cs",
@@ -836,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 47,
               "Title": "GameEditorWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameEditorWindow.xaml.cs",
@@ -848,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 48,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\GameService.cs",
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\GameService.cs",
@@ -860,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 49,
               "Title": "MyOrdersView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MyOrdersView.xaml.cs",
@@ -872,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "MyOrdersView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\MyOrdersView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\MyOrdersView.xaml",
@@ -883,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\LoginWindow.xaml",
@@ -894,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "RegistrationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\RegistrationWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\RegistrationWindow.xaml",
@@ -905,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "ShoppingCartView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\ShoppingCartView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\ShoppingCartView.xaml",
@@ -916,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 54,
               "Title": "UserManagementView.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\UserManagementView.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\UserManagementView.xaml",
@@ -927,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 55,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "HYDRA.GUI\\LoginWindow.xaml.cs",
@@ -939,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 56,
               "Title": "HYDRA.png",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\Images\\HYDRA.png",
               "RelativeDocumentMoniker": "HYDRA.GUI\\Images\\HYDRA.png",
@@ -950,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 57,
               "Title": "HYDRA.GUI.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\HYDRA.GUI.csproj",
               "RelativeDocumentMoniker": "HYDRA.GUI\\HYDRA.GUI.csproj",
@@ -962,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 58,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "HYDRA.BLL\\Services\\CartService.cs",
@@ -974,7 +975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 59,
               "Title": "GameEditorWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.GUI\\GameEditorWindow.xaml",
               "RelativeDocumentMoniker": "HYDRA.GUI\\GameEditorWindow.xaml",
@@ -985,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\Company.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Company.cs",
@@ -997,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\Genre.cs",
@@ -1009,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 62,
               "Title": "GameImage.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\Models\\GameImage.cs",
               "RelativeDocumentMoniker": "HYDRA.DAL\\Models\\GameImage.cs",
