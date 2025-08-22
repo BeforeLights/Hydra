@@ -3,9 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HYDRA.GUI"
         mc:Ignorable="d"
-        Title="GameEditorWindow" Height="450" Width="800">
+        Title="GameEditorWindow" Height="560" Width="860">
     <Grid Background="#2D2D30" Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,6 +16,27 @@
 
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <StackPanel>
+
+                <!-- RAWG chỉ dùng cho Add mode; mặc định Collapsed, bật trong ctor Add -->
+                <Border x:Name="RawgPanel"
+                        BorderBrush="#3E3E42" BorderThickness="1" CornerRadius="6"
+                        Padding="10" Margin="0,0,0,16" Background="#252526"
+                        Visibility="Collapsed">
+                    <StackPanel>
+                        <TextBlock Text="Import từ RAWG (tìm theo tên)" Foreground="White" FontWeight="Bold" Margin="0,0,0,8"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox x:Name="RawgNameBox" Width="320" Padding="6" Margin="0,0,8,0" ToolTip="Nhập tên game để tìm trên RAWG"/>
+                            <Button x:Name="BtnSearchRawg" Content="Tìm RAWG" Padding="8,6" Click="BtnSearchRawg_Click"/>
+                            <TextBlock Text=" Chọn một kết quả để tự điền form." Foreground="#bbbbbb" VerticalAlignment="Center" Margin="8,0,0,0"/>
+                        </StackPanel>
+                        <ListBox x:Name="RawgResults"
+                                 Height="160" Margin="0,10,0,0"
+                                 Background="#1E1E1E" Foreground="White" BorderBrush="#3E3E42"
+                                 DisplayMemberPath="Display"
+                                 SelectionChanged="RawgResults_SelectionChanged"/>
+                    </StackPanel>
+                </Border>
+
                 <TextBlock Text="Title" Foreground="White" Margin="0,0,0,5"/>
                 <TextBox x:Name="TitleTextBox" Padding="5" Margin="0,0,0,15"/>
 

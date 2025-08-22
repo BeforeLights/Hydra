@@ -37,7 +37,7 @@ namespace Hydra.Gui
 
                 var list = await _api.SearchRawgAsync(q, 25);   // List<RawgItem> với rawgId/name
                                                                 // HIỂN THỊ CHỈ TÊN
-                lstResults.ItemsSource = list.Select(x => new { RawgId = x.rawgId, Name = x.name }).ToList();
+                lstResults.ItemsSource = list.Select(x => new { RawgId = x.Id, Name = x.Name }).ToList();
             }
             catch (ApiClient.ApiError ex) { MessageBox.Show(ex.Message, "API"); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }

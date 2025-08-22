@@ -42,7 +42,7 @@ public class RawgController : ControllerBase
     {
         var data = await _svc.GetTopPendingAsync(take);
 
-        // shape phẳng để client bind dễ dàng
+        
         var shaped = data.Select(x => new
         {
             suggestionId = x.Id,

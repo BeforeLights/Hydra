@@ -3595,11 +3595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\HYDRA.API.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.API\\HYDRA.API.csproj",
       "projectName": "HYDRA.API",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\HYDRA.API.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.API\\HYDRA.API.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.API\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3620,11 +3620,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\HYDRA.BLL.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.BLL\\HYDRA.BLL.csproj"
+            "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.BLL\\HYDRA.BLL.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.BLL\\HYDRA.BLL.csproj"
             },
-            "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj"
+            "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj"
             }
           }
         }

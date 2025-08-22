@@ -48,8 +48,8 @@ namespace Hydra.API.Services
         }
 
         // RAWG search
-        public Task<List<RawgItem>> SearchRawgAsync(string q, int take = 10)
-            => Get<List<RawgItem>>($"/api/rawg/search?q={Uri.EscapeDataString(q)}&take={take}");
+        public Task<List<RawgDetail>> SearchRawgAsync(string q, int take = 10)
+            => Get<List<RawgDetail>>($"/api/rawg/search?q={Uri.EscapeDataString(q)}&take={take}");
 
         public Task<RawgDetail> GetRawgDetailAsync(int rawgId)
             => Get<RawgDetail>($"/api/rawg/{rawgId}");
@@ -102,12 +102,7 @@ namespace Hydra.API.Services
 
     // DTOs map với API
 
-    public record RawgItem
-    {
-        public int rawgId { get; set; }
-        public string name { get; set; } = "";
-        public string? rawgBackgroundImg { get; set; }
-    }
+    
     public record RawgDetail
     {
         public int Id { get; set; }
@@ -187,7 +182,7 @@ namespace Hydra.API.Services
         public int suggestionId { get; set; }
         public bool added { get; set; }        // vote
         public bool removed { get; set; }      // unvote
-        public string? message { get; set; }
+       
     }
 
 }
