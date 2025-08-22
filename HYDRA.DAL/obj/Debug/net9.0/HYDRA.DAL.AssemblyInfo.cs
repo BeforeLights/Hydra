@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HYDRA.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f41fa787e82c5f6f580120eb9a9ab2de2f0dc64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38b1f006fd7fab2826a9053309314458156113ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("HYDRA.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HYDRA.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

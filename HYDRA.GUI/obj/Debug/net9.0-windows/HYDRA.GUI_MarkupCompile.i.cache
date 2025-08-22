@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Downloads\Hydra\Hydra\Hydra\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\
+C:\Users\Admin\Desktop\GitRepos\Hydra\HYDRA.GUI\obj\Debug\net9.0-windows\
 HYDRA.GUI
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Admin\Downloads\Hydra\Hydra\Hydra\Hydra\HYDRA.GUI\App.xaml
+C:\Users\Admin\Desktop\GitRepos\Hydra\HYDRA.GUI\App.xaml
 14936486683
 
 22424099327
-3651805459535
+3651811880442
 AdminApproveWindow.xaml;CommunityRequestsWindow.xaml;CustomerStoreView.xaml;GameDetailView.xaml;GameEditorWindow.xaml;GameManagementView.xaml;LoginWindow.xaml;MainWindow.xaml;MyLibraryView.xaml;MyOrdersView.xaml;RegistrationWindow.xaml;RequestGameWindow.xaml;ShoppingCartView.xaml;UserManagementView.xaml;
 
-True
+False
 

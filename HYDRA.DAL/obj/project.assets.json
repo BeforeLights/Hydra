@@ -5010,11 +5010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
       "projectName": "HYDRA.DAL",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.DAL\\HYDRA.DAL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\Hydra\\Hydra\\Hydra\\Hydra\\HYDRA.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\Hydra\\HYDRA.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
